@@ -1,52 +1,136 @@
+<!-- Declaración que especifica el tipo de documento como HTML5 -->
 <!DOCTYPE html>
+
+<!-- Etiqueta raíz de la página configurando el idioma en español ('es') -->
 <html lang="es">
+
+<!-- Sección del encabezado donde se incluyen metadatos y vínculos externos -->
 <head>
+
+<!-- Configura la codificación de caracteres en UTF-8 para permitir tildes y caracteres especiales -->
 <meta charset="UTF-8">
+
+<!-- Define la configuración para la adaptación responsiva en dispositivos móviles y pantallas de distintos tamaños -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Define el título que aparece en la pestaña del navegador -->
 <title>Fechas importantes - Mes Patrio</title>
+
+<!-- Vincula la hoja de estilos externa 'style.css' para definir el diseño visual de la página -->
 <link rel="stylesheet" href="style.css">
+
+<!-- Cierre de la sección del encabezado -->
 </head>
+
+<!-- Inicio del cuerpo del documento que almacena los elementos perceptibles en pantalla -->
 <body>
 
+<!-- Encabezado superior visible de la página web -->
 <header>
+
+  <!-- Título principal de nivel 1 -->
   <h1>Viva Mexico!</h1>
+
+<!-- Cierre del encabezado superior -->
 </header>
 
+<!-- Menú de navegación principal con enlaces entre páginas del sitio -->
 <nav>
+
+  <!-- Enlace hacia la página principal de inicio -->
   <a href="index.html">Inicio</a>
+
+  <!-- Enlace a la sección actual, destacado visualmente mediante la clase CSS 'activa' -->
   <a href="fechas.html" class="activa">Fechas importantes</a>
+
+  <!-- Enlace hacia la página de personajes ilustres -->
   <a href="personajes.html">Personajes ilustres</a>
+
+  <!-- Enlace hacia la página de datos curiosos -->
   <a href="curiosos.html">Datos Curiosos</a>
+
+  <!-- Enlace hacia la página de mitos -->
   <a href="mitos.html">Mitos</a>
+
+<!-- Cierre de la barra de navegación -->
 </nav>
 
+<!-- Bloque principal con la información clave de la página web -->
 <main>
+
+  <!-- Sección que engloba el contenido temático de la línea de tiempo -->
   <section>
+
+    <!-- Título de nivel 2 fraccionado con etiquetas <span> para dar estilos tricolores personalizados en CSS -->
     <h2><span class="a">Fechas Im</span><span class="b">portantes</span> <span class="a">(</span><span class="c">Linea</span><span class="a"> de Tiempo)</span></h2>
+
+    <!-- Lista no ordenada con la clase 'info-list' para enumerar los sucesos históricos -->
     <ul class="info-list">
+
+      <!-- Evento del 8 de septiembre con el día resaltado mediante <strong> -->
       <li><strong>8 de septiembre:</strong> Día Internacional de la Alfabetización.</li>
+
+      <!-- Evento histórico del 13 de septiembre -->
       <li><strong>13 de septiembre (1847):</strong> Aniversario de la defensa del Castillo de Chapultepec por los Niños Héroes.</li>
+
+      <!-- Conmemoración histórica del 15 de septiembre -->
       <li><strong>15 de septiembre (1810):</strong> Conmemoración del Grito de Independencia por Miguel Hidalgo y Costilla.</li>
+
+      <!-- Evento histórico del 16 de septiembre -->
       <li><strong>16 de septiembre (1810):</strong> Aniversario del inicio de la Independencia de México.</li>
+
+      <!-- Evento del 21 de septiembre -->
       <li><strong>21 de septiembre:</strong> Día Internacional de la Paz.</li>
+
+      <!-- Evento histórico del 27 de septiembre -->
       <li><strong>27 de septiembre (1821):</strong> Entrada triunfal del Ejército Trigarante, consumación de la Independencia.</li>
+
+      <!-- Evento histórico del 28 de septiembre -->
       <li><strong>28 de septiembre (1821):</strong> Firma del Acta de Independencia de México.</li>
+
+      <!-- Evento histórico del 30 de septiembre -->
       <li><strong>30 de septiembre (1765):</strong> Natalicio de José María Morelos y Pavón.</li>
+
+    <!-- Cierre de la lista no ordenada -->
     </ul>
+
+    <!-- Contenedor div para centrar u organizar las imágenes de la sección -->
     <div class="img-row">
+
+      <!-- Comentario de soporte sobre el propósito de la imagen en el diseño -->
       <!-- IMAGEN 2: línea de tiempo o calendario -->
+
+      <!-- Etiqueta contenedora de elementos multimedia para dar formato de figura -->
       <figure class="img-frame-wrap">
+
+        <!-- Envoltorio interno para aplicar bordes o marcos decorativos por CSS -->
         <div class="img-frame">
+
+          <!-- Etiqueta de la imagen con la ruta de ubicación y su descripción mediante 'alt' -->
           <img src="images/calendario.jpg" alt="Línea de tiempo de septiembre">
+
+        <!-- Cierre del contenedor del marco de la imagen -->
         </div>
+
+      <!-- Cierre de la figura representativa -->
       </figure>
+
+    <!-- Cierre de la fila contenedora de imágenes -->
     </div>
+
+  <!-- Cierre de la sección temática -->
   </section>
+
+<!-- Cierre del contenido principal -->
 </main>
 
+<!-- Pie de página con el nombre y datos del autor o alumno -->
 <footer>
   Badiola Muñoz Sergio - 0800 - 5°J
 </footer>
 
+<!-- Cierre de la etiqueta body -->
 </body>
+
+<!-- Cierre del elemento raíz html -->
 </html>
