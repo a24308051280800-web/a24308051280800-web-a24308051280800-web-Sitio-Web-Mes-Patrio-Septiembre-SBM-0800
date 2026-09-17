@@ -1,168 +1,193 @@
+/* Declaración de variables CSS en el elemento raíz (:root) para reutilizar colores globales */
 :root{
-  --verde: #2fa885;
-  --rojo: #ff4438;
-  --gris: #d9d9d9;
-  --tinta: #1a1a1a;
+  --verde: #2fa885; /* Define el color verde temático */
+  --rojo: #ff4438;  /* Define el color rojo temático */
+  --gris: #d9d9d9;  /* Define el color gris de fondo general */
+  --tinta: #1a1a1a; /* Define el color oscuro principal para el texto */
 }
 
+/* Selector universal (*): restablece márgenes y rellenos, e incluye el borde y padding dentro del tamaño total */
 *{ box-sizing: border-box; margin:0; padding:0; }
 
+/* Configuración básica para el cuerpo del documento (body) */
 body{
-  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif;
-  background: var(--gris);
-  color: var(--tinta);
-  line-height: 1.6;
+  font-family: 'Trebuchet MS', 'Segoe UI', sans-serif; /* Define la tipografía principal del sitio */
+  background: var(--gris);                             /* Aplica la variable del color gris al fondo de la página */
+  color: var(--tinta);                                 /* Aplica la variable del color oscuro al texto */
+  line-height: 1.6;                                    /* Define una altura de línea legible para el texto */
 }
 
 /* ===== HEADER ===== */
+/* Estilos para el encabezado superior */
 header{
-  background: var(--verde);
-  color: white;
-  text-align: center;
-  padding: 1.4rem 1rem;
+  background: var(--verde); /* Asigna el color verde temático al fondo */
+  color: white;             /* Color blanco para el texto */
+  text-align: center;       /* Centra el texto en el encabezado */
+  padding: 1.4rem 1rem;     /* Espaciado interno (arriba/abajo e izquierda/derecha) */
 }
+/* Estilos para el título principal dentro del encabezado */
 header h1{
-  font-size: clamp(1.8rem, 5vw, 2.6rem);
-  font-weight: 800;
+  font-size: clamp(1.8rem, 5vw, 2.6rem); /* Tamaño de texto responsivo que escala entre 1.8rem y 2.6rem */
+  font-weight: 800;                      /* Define un grosor de letra extra negrita */
 }
 
 /* ===== NAV ===== */
+/* Estilos para la barra de navegación */
 nav{
-  background: var(--verde);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: .9rem;
-  padding: 0 1rem 1.4rem;
-  position: sticky;
-  top: 0;
-  z-index: 50;
+  background: var(--verde);     /* Fondo verde coherente con el encabezado */
+  display: flex;                /* Utiliza Flexbox para ordenar sus enlaces hijos */
+  flex-wrap: wrap;              /* Permite que los enlaces bajen a otra línea en pantallas pequeñas */
+  justify-content: center;      /* Centra los botones horizontalmente */
+  gap: .9rem;                   /* Espacio entre cada enlace */
+  padding: 0 1rem 1.4rem;       /* Relleno interno inferior e interno lateral */
+  position: sticky;             /* Mantiene la navegación fija en la parte superior al hacer scroll */
+  top: 0;                       /* Posición donde se fijará al hacer scroll */
+  z-index: 50;                  /* Asegura que el menú quede por encima de otros elementos */
 }
+/* Estilos para los botones o enlaces dentro del menú nav */
 nav a{
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: .6rem 1.4rem;
-  border-radius: 999px;
-  background: var(--rojo);
-  font-size: .95rem;
-  transition: filter .15s ease;
+  color: white;                 /* Texto en color blanco */
+  text-decoration: none;        /* Elimina el subrayado por defecto de los enlaces */
+  font-weight: bold;            /* Aplica negrita al texto */
+  padding: .6rem 1.4rem;        /* Relleno interno para darle aspecto de botón */
+  border-radius: 999px;         /* Bordes completamente redondeados (efecto píldora) */
+  background: var(--rojo);      /* Asigna la variable de color rojo como fondo */
+  font-size: .95rem;            /* Tamaño de fuente relativo para el botón */
+  transition: filter .15s ease; /* Transición suave de 0.15 segundos para efectos visuales */
 }
+/* Efecto hover y focus en los enlaces del nav */
 nav a:hover, nav a:focus-visible{
-  filter: brightness(1.1);
+  filter: brightness(1.1); /* Aumenta un 10% el brillo del botón al pasar el cursor o enfocarlo */
 }
+/* Estilo para el botón activo que representa la página actual */
 nav a.activa{
-  outline: 2px solid white;
-  outline-offset: 2px;
+  outline: 2px solid white; /* Añade un contorno blanco alrededor del botón */
+  outline-offset: 2px;     /* Separa el contorno 2px hacia afuera del botón */
 }
 
 /* ===== SECTIONS ===== */
-main{ max-width: 1000px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; }
+/* Contenedor del contenido principal */
+main{ max-width: 1000px; margin: 0 auto; padding: 2.5rem 1.5rem 3rem; } /* Ancho máximo de 1000px, centrado horizontal y relleno interno */
 
-section{ padding: 1rem 0 2.6rem; }
+/* Estilo para cada sección del contenido */
+section{ padding: 1rem 0 2.6rem; } /* Espaciado superior e inferior dentro de la sección */
 
+/* Estilos para los títulos h2 en las secciones */
 section h2{
-  text-align: center;
-  font-size: clamp(1.7rem, 4.5vw, 2.4rem);
-  font-weight: 800;
-  margin-bottom: 2rem;
+  text-align: center;                    /* Centra el texto del título */
+  font-size: clamp(1.7rem, 4.5vw, 2.4rem); /* Escala responsiva de fuente para títulos */
+  font-weight: 800;                      /* Grosor de letra extra negrita */
+  margin-bottom: 2rem;                   /* Separación inferior respecto al contenido */
 }
-section h2 .a{ color: var(--rojo); }
-section h2 .b{ color: white; -webkit-text-stroke: 1px var(--tinta); }
-section h2 .c{ color: var(--verde); }
+/* Colores de las letras de los títulos h2 para el efecto tricolor */
+section h2 .a{ color: var(--rojo); }                               /* Aplica el color rojo a los spans con clase 'a' */
+section h2 .b{ color: white; -webkit-text-stroke: 1px var(--tinta); } /* Letra blanca con borde oscuro de 1px para visibilidad */
+section h2 .c{ color: var(--verde); }                              /* Aplica el color verde a los spans con clase 'c' */
 
-ul.info-list{ list-style: none; max-width: 820px; margin: 0 auto; }
+/* Estilos para las listas de información */
+ul.info-list{ list-style: none; max-width: 820px; margin: 0 auto; } /* Quita viñetas por defecto, limita ancho y centra */
 ul.info-list li{
-  text-align: center;
-  padding: .55rem 0;
-  font-size: 1.05rem;
+  text-align: center; /* Centra el texto de cada elemento de lista */
+  padding: .55rem 0;  /* Separación vertical entre cada elemento */
+  font-size: 1.05rem; /* Tamaño de fuente para lectura cómoda */
 }
 
+/* Estilo para el párrafo introductorio de la página de inicio */
 .intro-text{
-  text-align: center;
-  max-width: 780px;
-  margin: 0 auto;
-  font-size: 1.1rem;
+  text-align: center;  /* Centra el texto */
+  max-width: 780px;    /* Limita el ancho horizontal del párrafo */
+  margin: 0 auto;      /* Centra el bloque del párrafo */
+  font-size: 1.1rem;   /* Aumenta ligeramente el tamaño del texto */
 }
 
 /* ===== IMAGE PLACEHOLDER ===== */
+/* Fila contenedora flexbox para organizar imágenes */
 .img-row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1.4rem;
-  margin-top: 2rem;
+  display: flex;           /* Flexbox para acomodar imágenes en fila */
+  flex-wrap: wrap;         /* Permite acomodar imágenes en múltiples filas si no caben */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  gap: 1.4rem;             /* Separación entre cada contenedor de imagen */
+  margin-top: 2rem;        /* Margen superior respecto al texto anterior */
 }
+/* Estilo del marcador de posición si aún no hay imagen */
 .img-placeholder{
-  border: 2px dashed #9a9a9a;
-  border-radius: 10px;
-  background: repeating-linear-gradient(45deg, rgba(0,0,0,.03), rgba(0,0,0,.03) 10px, transparent 10px, transparent 20px);
-  width: 260px;
-  height: 180px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #555;
-  padding: .8rem;
-  font-size: .9rem;
+  border: 2px dashed #9a9a9a;                                                                          /* Borde punteado gris */
+  border-radius: 10px;                                                                                 /* Esquinas redondeadas */
+  background: repeating-linear-gradient(45deg, rgba(0,0,0,.03), rgba(0,0,0,.03) 10px, transparent 10px, transparent 20px); /* Fondo a rayas */
+  width: 260px;                                                                                        /* Ancho fijo */
+  height: 180px;                                                                                       /* Alto fijo */
+  display: flex;                                                                                       /* Activa Flexbox */
+  flex-direction: column;                                                                              /* Apila ícono y texto en columna */
+  align-items: center;                                                                                 /* Centra horizontalmente */
+  justify-content: center;                                                                             /* Centra verticalmente */
+  text-align: center;                                                                                  /* Texto centrado */
+  color: #555;                                                                                         /* Color gris medio para texto */
+  padding: .8rem;                                                                                      /* Relleno interno */
+  font-size: .9rem;                                                                                    /* Tamaño de texto reducido */
 }
-.img-placeholder .icon{ font-size: 1.6rem; margin-bottom: .3rem; }
-.img-placeholder small{ opacity: .8; }
+/* Ícono opcional dentro del placeholder */
+.img-placeholder .icon{ font-size: 1.6rem; margin-bottom: .3rem; } /* Define tamaño e impacto visual del ícono */
+/* Texto secundario pequeño dentro del placeholder */
+.img-placeholder small{ opacity: .8; }                             /* Reduce la opacidad del texto informativo */
 
-/* cuando agregues tu <img>, dale display:block y quita el placeholder */
+/* Regla para la etiqueta img oculta por defecto dentro de un placeholder */
 .img-placeholder img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 8px;
-  display: none;
+  width: 100%;          /* Ocupa el 100% del ancho del contenedor */
+  height: 100%;         /* Ocupa el 100% del alto del contenedor */
+  object-fit: cover;    /* Recorta y ajusta la imagen sin deformarla */
+  border-radius: 8px;   /* Redondea las esquinas de la imagen */
+  display: none;        /* Oculta la imagen hasta activarla */
 }
 
 /* ===== MARCO DE IMAGEN REAL ===== */
+/* Contenedor en forma de marco rígido para imágenes pequeñas */
 .img-frame{
-  width: 260px;
-  height: 180px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 4px 10px rgba(0,0,0,.18);
-  border: 3px solid white;
-  background: white;
+  width: 260px;                           /* Ancho exacto del marco */
+  height: 180px;                          /* Alto exacto del marco */
+  border-radius: 10px;                    /* Esquinas suavemente redondeadas */
+  overflow: hidden;                       /* Oculta los bordes sobresalientes de la imagen */
+  box-shadow: 0 4px 10px rgba(0,0,0,.18); /* Sombra suave exterior */
+  border: 3px solid white;                /* Borde blanco grueso alrededor */
+  background: white;                      /* Fondo blanco de respaldo */
 }
+/* Estilo para las imágenes insertadas dentro de un marco de imagen (.img-frame) */
 .img-frame img{
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
+  width: 100%;       /* Ocupa todo el ancho disponible del marco */
+  height: 100%;      /* Ocupa todo el alto disponible del marco */
+  object-fit: cover; /* Mantiene la proporción de aspecto rellenando el marco sin distorsión */
+  display: block;    /* Elimina espacios en blanco inferiores no deseados */
 }
+/* Pie de foto para las imágenes dentro de figuras */
 .img-frame figcaption{
-  text-align: center;
-  font-size: .85rem;
-  color: #444;
-  margin-top: .4rem;
+  text-align: center; /* Centra la leyenda de la imagen */
+  font-size: .85rem;  /* Fuente más pequeña para el pie de foto */
+  color: #444;        /* Tono gris oscuro */
+  margin-top: .4rem;  /* Distancia con la parte inferior del marco */
 }
+/* Envoltorio que une el marco y su leyenda asociada */
 .img-frame-wrap{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex;          /* Disposición flexbox */
+  flex-direction: column; /* Alinea marco y pie de foto en una columna */
+  align-items: center;    /* Centra ambos elementos al medio */
 }
+/* Estilo para imágenes destacadas de mayor tamaño (p. ej., inicio) */
 .hero-img{
-  display: block;
-  max-width: 420px;
-  width: 100%;
-  height: auto;
-  margin: 0 auto;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,.2);
-  border: 4px solid white;
+  display: block;                         /* Comportamiento en bloque */
+  max-width: 420px;                       /* Ancho máximo en pantallas grandes */
+  width: 100%;                            /* Ancho responsivo en dispositivos reducidos */
+  height: auto;                           /* Preserva la relación de aspecto original de la imagen */
+  margin: 0 auto;                         /* Centrado horizontal automático */
+  border-radius: 12px;                    /* Bordes suavemente redondeados */
+  box-shadow: 0 6px 16px rgba(0,0,0,.2);  /* Sombra proyectada profunda */
+  border: 4px solid white;                /* Marco grueso blanco */
 }
 
 /* ===== FOOTER ===== */
+/* Estilos para el pie de página */
 footer{
-  background: var(--rojo);
-  color: white;
-  text-align: center;
-  padding: 1.1rem 1rem;
-  font-size: 1.05rem;
+  background: var(--rojo); /* Aplica el color rojo temático al fondo */
+  color: white;            /* Color de texto en blanco */
+  text-align: center;      /* Centra la información personal */
+  padding: 1.1rem 1rem;    /* Relleno interno superior e inferior */
+  font-size: 1.05rem;      /* Tamaño de texto legible */
 }
