@@ -1,58 +1,154 @@
+<!-- Declaración que especifica al navegador que el documento utiliza el estándar HTML5 -->
 <!DOCTYPE html>
+
+<!-- Apertura del elemento raíz HTML, definiendo el idioma en español ('es') -->
 <html lang="es">
+
+<!-- Encabezado del documento que contiene metadatos y archivos vinculados -->
 <head>
+
+<!-- Establece la codificación de caracteres en UTF-8 para admitir acentos y caracteres especiales -->
 <meta charset="UTF-8">
+
+<!-- Configura la vista para un diseño responsivo en dispositivos móviles y pantallas de distintos tamaños -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Define el título de la página que se muestra en la pestaña del navegador -->
 <title>Personajes ilustres - Mes Patrio</title>
+
+<!-- Conecta la hoja de estilos CSS externa 'style.css' para aplicar el formato visual -->
 <link rel="stylesheet" href="style.css">
+
+<!-- Cierre de la sección del encabezado -->
 </head>
+
+<!-- Apertura del cuerpo del documento que almacena el contenido visible de la página -->
 <body>
 
+<!-- Encabezado superior visible del sitio web -->
 <header>
+
+  <!-- Título principal de nivel 1 -->
   <h1>Viva Mexico!</h1>
+
+<!-- Cierre del encabezado superior -->
 </header>
 
+<!-- Menú de navegación principal entre secciones del sitio web -->
 <nav>
+
+  <!-- Enlace hacia la página de inicio -->
   <a href="index.html">Inicio</a>
+
+  <!-- Enlace hacia la página de fechas importantes -->
   <a href="fechas.html">Fechas importantes</a>
+
+  <!-- Enlace marcado con la clase 'activa' para resaltar visualmente la página actual -->
   <a href="personajes.html" class="activa">Personajes ilustres</a>
+
+  <!-- Enlace hacia la página de datos curiosos -->
   <a href="curiosos.html">Datos Curiosos</a>
+
+  <!-- Enlace hacia la página de mitos -->
   <a href="mitos.html">Mitos</a>
+
+<!-- Cierre de la barra de navegación -->
 </nav>
 
+<!-- Bloque de contenido principal de la página web -->
 <main>
+
+  <!-- Sección contenedora del tema sobre los personajes ilustres -->
   <section>
+
+    <!-- Título de nivel 2 segmentado en tres <span> para aplicar el diseño de color tricolor por CSS -->
     <h2><span class="a">Person</span><span class="b">ajes Il</span><span class="c">ustres</span></h2>
+
+    <!-- Lista no ordenada con la clase 'info-list' para mostrar los personajes clave -->
     <ul class="info-list">
+
+      <!-- Información sobre Miguel Hidalgo con el nombre en negrita mediante <strong> -->
       <li><strong>Miguel Hidalgo y Costilla:</strong> Iniciador de la Independencia con el Grito de Dolores el 16 de septiembre de 1810.</li>
+
+      <!-- Información sobre José María Morelos y Pavón -->
       <li><strong>José María Morelos y Pavón:</strong> Caudillo insurgente que redactó los Sentimientos de la Nación.</li>
+
+      <!-- Información sobre Ignacio Allende y Juan Aldama -->
       <li><strong>Ignacio Allende y Juan Aldama:</strong> Militares y líderes clave que organizaron las primeras juntas conspirativas junto a Hidalgo.</li>
+
+      <!-- Información sobre Josefa Ortiz de Domínguez -->
       <li><strong>Josefa Ortiz de Domínguez:</strong> La Corregidora, pieza fundamental en la organización inicial de la conspiración de Querétaro.</li>
+
+      <!-- Información sobre Vicente Guerrero y Agustín de Iturbide -->
       <li><strong>Vicente Guerrero y Agustín de Iturbide:</strong> Encargados de consumar la independencia con el Abrazo de Acatempan y el Plan de Iguala.</li>
+
+      <!-- Información sobre Los Niños Héroes de Chapultepec -->
       <li><strong>Los Niños Héroes:</strong> Cadetes que defendieron el Castillo de Chapultepec el 13 de septiembre de 1847 (Juan de la Barrera, Juan Escutia, Agustín Melgar, Fernando Montes de Oca, Francisco Márquez y Vicente Suárez).</li>
+
+    <!-- Cierre de la lista no ordenada -->
     </ul>
+
+    <!-- Contenedor flex/grid para estructurar las imágenes de los personajes -->
     <div class="img-row">
+
+      <!-- Comentario en el código sobre la primera imagen -->
       <!-- IMAGEN 3: retrato de un personaje -->
+
+      <!-- Primera figura independiente para la imagen de Hidalgo y su pie de foto -->
       <figure class="img-frame-wrap">
+
+        <!-- Marco contenedor de la imagen -->
         <div class="img-frame">
+
+          <!-- Etiqueta de imagen con ruta de origen y texto alternativo descriptivo -->
           <img src="images/hidalgo.jpg" alt="Retrato de Miguel Hidalgo">
+
+        <!-- Cierre del marco de la primera imagen -->
         </div>
+
+        <!-- Leyenda descriptiva al pie de la primera imagen -->
         <figcaption>Retrato de Miguel Hidalgo</figcaption>
+
+      <!-- Cierre de la primera figura -->
       </figure>
+
+      <!-- Comentario en el código sobre la segunda imagen -->
       <!-- IMAGEN 4: Niños Héroes -->
+
+      <!-- Segunda figura independiente para la imagen de los Niños Héroes -->
       <figure class="img-frame-wrap">
+
+        <!-- Marco contenedor de la imagen -->
         <div class="img-frame">
+
+          <!-- Etiqueta de la segunda imagen con su ruta y texto alternativo -->
           <img src="images/ninos-heroes.jpg" alt="Los Niños Héroes">
+
+        <!-- Cierre del marco de la segunda imagen -->
         </div>
+
+        <!-- Leyenda descriptiva al pie de la segunda imagen -->
         <figcaption>Los Niños Héroes</figcaption>
+
+      <!-- Cierre de la segunda figura -->
       </figure>
+
+    <!-- Cierre del contenedor de imágenes -->
     </div>
+
+  <!-- Cierre de la sección -->
   </section>
+
+<!-- Cierre del contenido principal -->
 </main>
 
+<!-- Pie de página con los datos del alumno y grupo -->
 <footer>
   Badiola Muñoz Sergio - 0800 - 5°J
 </footer>
 
+<!-- Cierre de la etiqueta body -->
 </body>
+
+<!-- Cierre de la etiqueta raíz html -->
 </html>
