@@ -1,48 +1,124 @@
+<!-- Declaración que especifica al navegador que el documento usa el estándar HTML5 -->
 <!DOCTYPE html>
+
+<!-- Apertura del elemento raíz HTML, definiendo el idioma en español ('es') -->
 <html lang="es">
+
+<!-- Encabezado del documento que agrupa metadatos y archivos vinculados -->
 <head>
+
+<!-- Establece la codificación de caracteres en UTF-8 para admitir acentos y caracteres especiales -->
 <meta charset="UTF-8">
+
+<!-- Configura la vista para un diseño adaptable a diferentes tamaños de pantalla en dispositivos móviles -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Define el título de la página que se muestra en la pestaña del navegador -->
 <title>Mitos - Mes Patrio</title>
+
+<!-- Conecta el archivo de estilos CSS externo 'style.css' a la página web -->
 <link rel="stylesheet" href="style.css">
+
+<!-- Cierre de la sección del encabezado -->
 </head>
+
+<!-- Apertura del cuerpo de la página, que almacena todo el contenido perceptible por el usuario -->
 <body>
 
+<!-- Encabezado visible del sitio web -->
 <header>
+
+  <!-- Título principal de nivel 1 -->
   <h1>Viva Mexico!</h1>
+
+<!-- Cierre de la sección de encabezado -->
 </header>
 
+<!-- Menú de navegación principal para desplazarse entre secciones del sitio -->
 <nav>
+
+  <!-- Enlace hacia la página principal de inicio -->
   <a href="index.html">Inicio</a>
+
+  <!-- Enlace hacia la página de fechas importantes -->
   <a href="fechas.html">Fechas importantes</a>
+
+  <!-- Enlace hacia la página de personajes ilustres -->
   <a href="personajes.html">Personajes ilustres</a>
+
+  <!-- Enlace hacia la página de datos curiosos -->
   <a href="curiosos.html">Datos Curiosos</a>
+
+  <!-- Enlace marcado con la clase 'activa' para resaltar visualmente que es la sección actual -->
   <a href="mitos.html" class="activa">Mitos</a>
+
+<!-- Cierre de la barra de navegación -->
 </nav>
 
+<!-- Bloque de contenido principal de la página web -->
 <main>
+
+  <!-- Sección que agrupa la información sobre los mitos comunes -->
   <section>
+
+    <!-- Título de nivel 2 segmentado en etiquetas <span> para dar el formato de color tricolor con CSS -->
     <h2><span class="a">Mito</span><span class="b">s Com</span><span class="c">unes</span></h2>
+
+    <!-- Lista no ordenada con la clase 'info-list' para mostrar los mitos históricos -->
     <ul class="info-list">
+
+      <!-- Primer mito con su concepto inicial resaltado en negrita (<strong>) -->
       <li><strong>El Grito no fue por la libertad total:</strong> en la madrugada del 16 de septiembre de 1810, Miguel Hidalgo no exigió la independencia absoluta de España. El llamado original fue en defensa de la religión y a favor del rey Fernando VII, bajo la consigna de combatir el "mal gobierno".</li>
+
+      <!-- Segundo mito sobre la frase original expresada en el suceso -->
       <li><strong>El grito exacto:</strong> las crónicas de testigos presenciales señalan que Hidalgo exclamó "¡Viva la religión!, ¡Viva Fernando VII! y ¡Muera el mal gobierno!". La frase "¡Viva México!" se integró mucho después en la narrativa oficial.</li>
+
+      <!-- Tercer mito sobre el motivo del horario de la celebración oficial -->
       <li><strong>La fecha de la conmemoración:</strong> el Grito de Dolores ocurrió en la madrugada del 16 de septiembre, pero la celebración oficial se realiza la noche del 15 de septiembre debido a un decreto de la época de Porfirio Díaz.</li>
+
+    <!-- Cierre de la lista no ordenada -->
     </ul>
+
+    <!-- Contenedor div para agrupar y organizar la imagen ilustrativa -->
     <div class="img-row">
+
+      <!-- Comentario en el código sobre la imagen de la sección -->
       <!-- IMAGEN 6: representación del Grito de Dolores -->
+
+      <!-- Etiqueta de figura independiente para envolver la imagen con su leyenda -->
       <figure class="img-frame-wrap">
+
+        <!-- Contenedor interno para aplicar bordes decorativos o marcos vía CSS -->
         <div class="img-frame">
+
+          <!-- Etiqueta de la imagen con la ruta de la fuente y su texto de accesibilidad 'alt' -->
           <img src="images/campana.jpg" alt="Campana de Dolores">
+
+        <!-- Cierre del contenedor del marco de la imagen -->
         </div>
+
+        <!-- Pie de foto o descripción visual debajo de la imagen -->
         <figcaption>Campana de Dolores</figcaption>
+
+      <!-- Cierre del bloque de figura -->
       </figure>
+
+    <!-- Cierre del contenedor de la imagen -->
     </div>
+
+  <!-- Cierre de la sección -->
   </section>
+
+<!-- Cierre del bloque de contenido principal -->
 </main>
 
+<!-- Pie de página con la información institucional o del autor -->
 <footer>
   Badiola Muñoz Sergio - 0800 - 5°J
 </footer>
 
+<!-- Cierre de la etiqueta body -->
 </body>
+
+<!-- Cierre de la etiqueta raíz html -->
 </html>
