@@ -1,43 +1,101 @@
+<!-- Declaración del tipo de documento: indica al navegador que este es un archivo HTML5 -->
 <!DOCTYPE html>
+
+<!-- Etiqueta raíz de la página HTML, definiendo 'es' (español) como el idioma del contenido -->
 <html lang="es">
+
+<!-- Encabezado del documento: contiene metadatos y enlaces a recursos externos no visibles en la página -->
 <head>
+
+<!-- Define la codificación de caracteres a UTF-8 para admitir acentos, eñes y caracteres especiales -->
 <meta charset="UTF-8">
+
+<!-- Ajusta la escala de la pantalla para garantizar que la página sea responsiva en dispositivos móviles -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Define el título que aparecerá en la pestaña del navegador -->
 <title>Inicio - Mes Patrio</title>
+
+<!-- Vincula la hoja de estilos externa 'style.css' para dar formato visual al diseño -->
 <link rel="stylesheet" href="style.css">
+
+<!-- Cierre del encabezado -->
 </head>
+
+<!-- Cuerpo del documento: contiene todo el contenido visible de la página web -->
 <body>
 
+<!-- Sección superior o encabezado principal del sitio -->
 <header>
+
+  <!-- Título principal de nivel 1 de la página web -->
   <h1>Viva Mexico!</h1>
+
+<!-- Cierre de la sección del encabezado -->
 </header>
 
+<!-- Menú de navegación principal con enlaces a las distintas páginas del sitio -->
 <nav>
+
+  <!-- Enlace a la página de inicio, marcándola con la clase 'activa' para resaltar la sección actual -->
   <a href="index.html" class="activa">Inicio</a>
+
+  <!-- Enlace hacia la página de fechas importantes -->
   <a href="fechas.html">Fechas importantes</a>
+
+  <!-- Enlace hacia la página de personajes ilustres -->
   <a href="personajes.html">Personajes ilustres</a>
+
+  <!-- Enlace hacia la página de datos curiosos -->
   <a href="curiosos.html">Datos Curiosos</a>
+
+  <!-- Enlace hacia la página de mitos -->
   <a href="mitos.html">Mitos</a>
+
+<!-- Cierre del menú de navegación -->
 </nav>
 
+<!-- Área de contenido principal de la página -->
 <main>
+
+  <!-- Sección contenedora para agrupar información relacionada -->
   <section>
+
+    <!-- Título de nivel 2 con etiquetas <span> intermedios para aplicar estilos CSS a letras o palabras individuales -->
     <h2><span class="a">P1- </span><span class="b">Pagina Web</span><br><span class="a">Mes Pat</span><span class="b">rio</span></h2>
+
+    <!-- Párrafo explicativo de introducción estilizado mediante la clase 'intro-text' -->
     <p class="intro-text">
       Septiembre es el Mes Patrio de México, lleno de historia, tradiciones y orgullo nacional.
       En este mes recordamos la Independencia y a los personajes que lucharon por la libertad
       de nuestro país.
     </p>
+
+    <!-- Contenedor div utilizado para maquetar la imagen mediante clases CSS -->
     <div class="img-row">
+
+      <!-- Comentario en el código original explicando la intención de la imagen -->
       <!-- IMAGEN 1: foto representativa del Mes Patrio -->
+
+      <!-- Etiqueta de imagen con clase CSS, ruta del archivo y texto alternativo por accesibilidad -->
       <img class="hero-img" src="images/bandera.webp" alt="Bandera de México">
+
+    <!-- Cierre del contenedor de la imagen -->
     </div>
+
+  <!-- Cierre de la sección -->
   </section>
+
+<!-- Cierre del contenido principal -->
 </main>
 
+<!-- Pie de página con los datos del autor o derechos de autor -->
 <footer>
   Badiola Muñoz Sergio - 0800 - 5°J
 </footer>
 
+<!-- Cierre del cuerpo del documento -->
 </body>
+
+<!-- Cierre de la etiqueta raíz HTML -->
 </html>
